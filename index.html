@@ -30,6 +30,9 @@
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   />
+
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
 </head>
 
 <body class="index-page">
@@ -68,6 +71,9 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="javascript:void(0);" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/entrenamientospuntonet'});return false;">Book</a>
+            </li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -475,7 +481,7 @@
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/eduardo-mulet-05785a49/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
                 <h4>Eduardo Mulet</h4>
                 <span>Founder / Chief Executive Officer</span>
@@ -493,7 +499,7 @@
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/cesar-puerto-196a6976/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
                 <h4>César Puerto</h4>
                 <span>Founder / Investor</span>
@@ -511,7 +517,7 @@
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/maikel-luis/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
                 <h4>Maikel Luis</h4>
                 <span>Founder / Sr. Full Stack Engineer</span>
@@ -529,7 +535,7 @@
                   <a href=""><i class="bi bi-twitter-x"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/javier-j-martinez-f/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
                 <h4>Javier Martínez</h4>
                 <span>Software Developer</span>
@@ -563,7 +569,7 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt"></i>
               <h3>Address</h3>
@@ -571,7 +577,7 @@
             </div>
           </div><!-- End Info Item -->
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
@@ -579,7 +585,7 @@
             </div>
           </div><!-- End Info Item -->
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
@@ -587,6 +593,14 @@
             </div>
           </div><!-- End Info Item -->
 
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="500">
+            <i class="bi bi-calendar-event"></i>
+            <h3>Schedule a Call</h3>
+            <a href="javascript:void(0);" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/entrenamientospuntonet'}); return false;" class="btn btn-outline-primary mt-2">
+              Book Now
+            </a>
+          </div>
         </div>
 
       </div>
@@ -646,6 +660,9 @@
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Mulet International</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
       </div>
+
+
+
     </div>
 
   </footer>
@@ -674,6 +691,9 @@
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   ></script>
   <script src="assets/js/map.js"></script>
+
+  <!-- Calendly -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
 </body>
 
