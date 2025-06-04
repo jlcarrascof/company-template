@@ -24,6 +24,12 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
 </head>
 
 <body class="index-page">
@@ -332,7 +338,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>We have worked on a wide range of projects, including business platforms, client portals, and e-commerce solutions. We're working right now in our main project: Harmony System</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -537,45 +543,47 @@
 
     </section><!-- /Team Section -->
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-    </section><!-- /Faq Section -->
-
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Please, feel free to contact us.</p>
       </div><!-- End Section Title -->
+
+      <!-- Start Map Section -->
+      <div class="container mb-5" data-aos="fade-up" data-aos-delay="50">
+        <h4 class="mb-3">Our Location</h4>
+        <div id="map" style="height: 350px; width: 100%; border-radius: 12px;"></div>
+      </div>
+      <!-- End Map Section -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-lg-6">
+          <div class="col-lg-4 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt"></i>
               <h3>Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>13371 SW 190th Terrace Miami Fl, 33177</p>
             </div>
           </div><!-- End Info Item -->
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone"></i>
               <h3>Call Us</h3>
-              <p>+1 5589 55488 55</p>
+              <p>+1 (786) 445 - 2972</p>
             </div>
           </div><!-- End Info Item -->
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
-              <p>info@example.com</p>
+              <p>muletinternational@gmail.com</p>
             </div>
           </div><!-- End Info Item -->
 
@@ -593,13 +601,13 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Mamba</span>
+            <span class="sitename">Mulet International</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>13371 SW 190th Terrace</p>
+            <p>Miami Fl, 33177</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 (786) 445 - 2972</span></p>
+            <p><strong>Email:</strong> <span>muletinternational@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -609,18 +617,18 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-4 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#">Terms of service</a></li>
             <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-4 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
             <li><a href="#">Web Design</a></li>
@@ -628,28 +636,6 @@
             <li><a href="#">Product Management</a></li>
             <li><a href="#">Marketing</a></li>
             <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
           </ul>
         </div>
 
@@ -682,6 +668,12 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  ></script>
+  <script src="assets/js/map.js"></script>
 
 </body>
 
