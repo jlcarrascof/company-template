@@ -657,7 +657,7 @@
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope"></i>
               <h3>Email Us</h3>
-              <p>muletinternational@gmail.com</p>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-link p-0">Send a Message</a>
             </div>
           </div><!-- End Info Item -->
 
@@ -673,6 +673,42 @@
 
       </div>
 
+      <!-- Contact Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Send Us a Message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="contact-form" action="https://formspree.io/f/mknaqnpb" method="POST" data-aos="fade-up">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div id="form-message" class="d-none alert"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" form="contact-form" class="btn btn-primary">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Contact Modal -->      
     </section><!-- /Contact Section -->
 
   </main>
