@@ -1000,6 +1000,14 @@ section,
   }
 }
 
+.form-container, .info-container {
+  border: 1px solid #333; /* Borde gris oscuro */
+  padding: 20px; /* Espacio interno */
+  border-radius: 8px; /* Bordes redondeados (opcional) */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave (opcional) */
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
