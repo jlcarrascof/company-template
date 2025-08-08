@@ -65,17 +65,17 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#case-studies">Case Studies</a></li>
             <li><a href="#team">Team</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
             <li>
               <a href="javascript:void(0);" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/entrenamientospuntonet'});return false;">Book</a>
             </li>
-            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -146,42 +146,73 @@
 
       </div>
 
-      <!-- Contact Modal -->
-      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="contactModalLabel">Send Us a Message</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form id="contact-form" action="https://formspree.io/f/mknaqnpb" method="POST" data-aos="fade-up">
-                <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6">
-                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                  </div>
-                  <div class="col-12">
-                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                  </div>
-                  <div class="col-12">
-                    <textarea name="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
-                  </div>
-                  <div class="col-12">
-                    <div id="form-message" class="d-none alert"></div>
+<hr>      
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <!-- Form and Contact Info -->
+            <div class="col-lg-12">
+              <div class="row">
+                <!-- Left Column: Form -->
+                <div class="col-md-6">
+                  <h3>Get in Touch</h3>
+                  <form id="contact-form" action="https://formspree.io/f/mknaqnpb" method="POST" data-aos="fade-up">
+                    <div class="row gy-4">
+                      <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Firstname" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" name="lastname" class="form-control" placeholder="Lastname" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="Email" required>
+                      </div>
+                      <div class="col-md-6">
+                        <input type="tel" name="phone" class="form-control" placeholder="Phone" required>
+                      </div>
+                      <div class="col-12">
+                        <select name="subject" class="form-control" required>
+                          <option value="" disabled selected>Subject</option>
+                          <option value="general">General Inquiry</option>
+                          <option value="support">Support</option>
+                          <option value="sales">Sales</option>
+                        </select>
+                      </div>
+                      <div class="col-12">
+                        <textarea name="message" class="form-control" rows="6" placeholder="Message/Inquiry" required></textarea>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="acceptTerms" required>
+                          <label class="form-check-label" for="acceptTerms">I accept receiving communications from Mulet International.</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary w-100">Send Now</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- Right Column: Contact Info -->
+                <div class="col-md-6">
+                  <p>Let's talk about your ideas and how we can help you to build the website of your dreams. You can expect to hear from us within 24 hours, but we will get back to you asap.</p>
+                  <hr class="accent-line">
+                  <h6>Headquarter</h6>
+                  <p>13371 SW 190th Terrace, Miami, FL 33177</p>
+                  <p>+1 (786) 445 - 2972</p>
+                  <p>muletinternational@gmail.com</p>
+                  <div class="social-links">
+                    <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="submit" form="contact-form" class="btn btn-primary">Send Message</button>
+              </div>
             </div>
           </div>
         </div>
-      </div><!-- End Contact Modal -->      
+
+
     </section><!-- /Contact Section -->
 
   </main>
