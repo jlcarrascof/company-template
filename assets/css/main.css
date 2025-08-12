@@ -1748,3 +1748,39 @@ section,
   color: var(--accent-color);
 }
 
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+.carousel-slide {
+  display: flex;
+  gap: 40px; /* Espacio entre logos */
+}
+
+.carousel-slide img {
+  height: 80px; /* Tamaño uniforme */
+  object-fit: contain;
+  aspect-ratio: 3 / 2; /* Mantiene proporción sin deformar */
+  transition: transform 0.3s ease;
+}
+
+.carousel-slide img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
