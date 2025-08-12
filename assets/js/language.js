@@ -1,22 +1,239 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const langToggle = document.getElementById('lang-toggle');
-    const langText = document.getElementById('lang-text');
-    let currentLang = 'en'; // Idioma por defecto
-
-    function updateLanguage(lang) {
-      currentLang = lang;
-      langText.textContent = lang === 'en' ? 'EN / ES' : 'ES / EN';
-      window.location.href = `/${lang}/index.html`;
+  const translations = {
+    en: {
+      page_title: 'Index - Mulet International',
+      lang_toggle: 'EN / ES',
+      nav_home: 'Home',
+      nav_about: 'About',
+      nav_services: 'Services',
+      nav_portfolio: 'Portfolio',
+      nav_case_studies: 'Case Studies',
+      nav_team: 'Team',
+      nav_contact: 'Contact',
+      nav_book: 'Book',
+      nav_blog: 'Blog',
+      hero_slide1_title: 'Custom Software Solutions That Drive Real Business Outcomes',
+      hero_slide1_desc: 'We help organizations design, build, and scale digital products using agile teams and modern technologies.',
+      hero_slide1_btn1: 'Get Started',
+      hero_slide1_btn2: 'See Our Work',
+      hero_slide2_title: 'Scalable Cloud Solutions for the Modern Enterprise',
+      hero_slide2_desc: 'From architecture to deployment, we deliver secure, cloud-native applications tailored to your growth.',
+      hero_slide2_btn1: 'Learn More',
+      hero_slide2_btn2: 'See Case Studies',
+      hero_slide3_title: 'Empowering Your Teams Through Hands-On Training',
+      hero_slide3_desc: 'We prepare your developers with modern practices and real-world challenges to accelerate delivery and innovation.',
+      hero_slide3_btn1: 'Explore Training',
+      hero_slide3_btn2: 'Talk to an Expert',
+      trust_bar: 'Trusted by leading companies in 5+ countries · 50+ successful projects delivered',
+      about_title: '<b>We are Mulet International</b>',
+      about_desc: "Mulet International is made up of technological leaders who consistently push themselves and each other to deliver for our clients. More importantly, they're simply good people, which makes Mulet International a great place to work and a partner you can trust for all software development and software expert matters.",
+      about_sub1_title: 'Custom Software Starts With Listening',
+      about_sub1_desc1: 'We believe the best digital solutions are born from trust, clarity, and real human connection. That’s why we begin every project by sitting down with you—just like this.',
+      about_sub1_desc2: 'By deeply understanding your operations and ambitions, we craft software that adapts to you, not the other way around. From user experience to backend logic, everything is tailored. Because your business deserves more than a generic product—it deserves a partner.',
+      about_sub2_title: "Let's Build the Right Solution, Together",
+      about_sub2_desc1: 'Every successful software starts with a meaningful conversation. At Mulet International, we take time to understand your goals, challenges, and vision.',
+      about_sub2_desc2: "Through collaborative dialogue, we turn your unique business needs into powerful, custom-built software. Whether you're starting from scratch or optimizing existing systems, our team is here to co-create tools that truly make a difference. Your success is our blueprint.",
+      whyus_1_title: 'Tailored Software Solutions',
+      whyus_1_desc: 'We build software around your business—not the other way around. Every line of code is crafted to meet your exact goals, workflows, and industry requirements.',
+      whyus_2_title: 'People-First Approach',
+      whyus_2_desc: "We believe great software begins with empathy. Our team listens carefully, collaborates openly, and ensures you're involved in every step of the development journey.",
+      whyus_3_title: 'Global Experience, Local Feel',
+      whyus_3_desc: 'With international expertise and personalized attention, we bring global standards to your project while building a partnership that feels close and accessible.',
+      stats_happy_clients: 'Happy Clients',
+      stats_projects: 'Projects',
+      stats_hours_support: 'Hours Of Support',
+      stats_hard_workers: 'Hard Workers',
+      services_title: 'Services',
+      services_desc: 'At Mulet International, we provide custom software development, cloud computing solutions, and hands-on training tailored to your business needs. Our mission is to deliver reliable, scalable, and innovative IT services while building long-term relationships based on trust, transparency, and results. Your success is our highest priority.',
+      service1_title: 'Tailored Applications',
+      service1_desc: 'We design and build custom software tailored to your unique business needs, ensuring functionality, scalability, and long-term value.',
+      service2_title: 'Cloud Infrastructure',
+      service2_desc: 'We help you migrate, build, and scale your systems in the cloud using AWS, Azure, or GCP, maximizing performance and reducing costs.',
+      service3_title: 'Technical Training',
+      service3_desc: 'We offer hands-on workshops and coaching to upskill your teams in the latest technologies, best practices, and development workflows.',
+      service4_title: 'Modern Tech Stack',
+      service4_desc: 'Our developers use cutting-edge frameworks and tools to deliver fast, secure, and maintainable solutions for web and mobile platforms.',
+      service5_title: 'DevOps & Automation',
+      service5_desc: 'Our cloud services include CI/CD pipelines, infrastructure as code, and automated monitoring to keep your systems running smoothly.',
+      service6_title: 'Software Training',
+      service6_desc: 'We provide personalized training sessions to help your team master our custom-built software, ensuring smooth adoption, confident usage, and maximum efficiency in day-to-day operations.',
+      portfolio_title: 'Portfolio',
+      portfolio_desc: "We have worked on a wide range of projects, including business platforms, client portals, and e-commerce solutions. We're working right now in our main project: Harmony System",
+      portfolio_filter_all: 'All',
+      portfolio_filter_business: 'Business Platforms',
+      portfolio_filter_client: 'Client Portals',
+      portfolio_filter_ecommerce: 'E-commerce Solutions',
+      portfolio_item1_title: 'Business Platforms',
+      portfolio_item1_desc: 'Modular Financial ERP',
+      portfolio_item2_title: 'Client Portals',
+      portfolio_item2_desc: 'Customer Support Portal',
+      portfolio_item3_title: 'E-commerce Solutions',
+      portfolio_item3_desc: 'Natural Products Store',
+      portfolio_item4_title: 'Business Platforms',
+      portfolio_item4_desc: 'Human Resources System',
+      portfolio_item5_title: 'Client Portals',
+      portfolio_item5_desc: 'Billing and Payment Portal',
+      portfolio_item6_title: 'E-commerce Solutions',
+      portfolio_item6_desc: 'B2B Marketplace',
+      portfolio_item7_title: 'Business Platforms',
+      portfolio_item7_desc: 'Custom Sales CRM',
+      portfolio_item8_title: 'Client Portals',
+      portfolio_item8_desc: 'Online Learning Portal',
+      portfolio_item9_title: 'E-commerce Solutions',
+      portfolio_item9_desc: 'Subscription-based E-commerce',
+      case_studies_title: 'Some of our Clients',
+      case_studies_desc: 'Seamless collaboration to define, design and develop custom digital systems across all industries.',
+      team_title: 'Team',
+      team_desc: 'Our team is made up of dedicated professionals who are passionate about what they do and committed to delivering exceptional results.',
+      team_member1_role: 'Founder / Chief Executive Officer',
+      team_member2_role: 'Founder / Investor',
+      team_member3_role: 'Founder / Sr. Full Stack Engineer',
+      team_member4_role: 'Software Architecture/Cloud Expert',
+      team_member5_role: 'Software Developer',
+      footer_phone: 'Phone:',
+      footer_email: 'Email:',
+      footer_useful_links: 'Useful Links',
+      footer_about_us: 'About us',
+      footer_terms: 'Terms of service',
+      footer_privacy: 'Privacy policy',
+      footer_our_services: 'Our Services',
+      footer_service_web_design: 'Web Design',
+      footer_service_web_dev: 'Web Development',
+      footer_service_product_mgmt: 'Product Management',
+      footer_service_marketing: 'Marketing',
+      footer_service_graphic: 'Graphic Design',
+      footer_copyright: 'Copyright',
+      footer_all_rights: 'All Rights Reserved'
+    },
+    es: {
+      page_title: 'Índice - Mulet International',
+      lang_toggle: 'ES / EN',
+      nav_home: 'Inicio',
+      nav_about: 'Acerca de',
+      nav_services: 'Servicios',
+      nav_portfolio: 'Portafolio',
+      nav_case_studies: 'Estudios de Caso',
+      nav_team: 'Equipo',
+      nav_contact: 'Contacto',
+      nav_book: 'Reservar',
+      nav_blog: 'Blog',
+      hero_slide1_title: 'Soluciones de Software Personalizadas que Impulsan Resultados Reales en los Negocios',
+      hero_slide1_desc: 'Ayudamos a las organizaciones a diseñar, construir y escalar productos digitales utilizando equipos ágiles y tecnologías modernas.',
+      hero_slide1_btn1: 'Comenzar',
+      hero_slide1_btn2: 'Ver Nuestro Trabajo',
+      hero_slide2_title: 'Soluciones en la Nube Escalables para la Empresa Moderna',
+      hero_slide2_desc: 'Desde la arquitectura hasta la implementación, entregamos aplicaciones nativas de la nube seguras y adaptadas a su crecimiento.',
+      hero_slide2_btn1: 'Aprender Más',
+      hero_slide2_btn2: 'Ver Estudios de Caso',
+      hero_slide3_title: 'Empoderando a Sus Equipos a Través de Capacitación Práctica',
+      hero_slide3_desc: 'Preparamos a sus desarrolladores con prácticas modernas y desafíos del mundo real para acelerar la entrega e innovación.',
+      hero_slide3_btn1: 'Explorar Capacitación',
+      hero_slide3_btn2: 'Hablar con un Experto',
+      trust_bar: 'Confiado por empresas líderes en más de 5 países · Más de 50 proyectos exitosos entregados',
+      about_title: '<b>Somos Mulet International</b>',
+      about_desc: 'Mulet International está compuesto por líderes tecnológicos que se impulsan constantemente a sí mismos y a los demás para entregar resultados a nuestros clientes. Más importante aún, son simplemente buenas personas, lo que hace de Mulet International un gran lugar para trabajar y un socio en el que puede confiar para todos los asuntos de desarrollo de software y expertos en software.',
+      about_sub1_title: 'El Software Personalizado Comienza con Escuchar',
+      about_sub1_desc1: 'Creemos que las mejores soluciones digitales nacen de la confianza, la claridad y una conexión humana real. Por eso comenzamos cada proyecto sentándonos con usted, justo como esto.',
+      about_sub1_desc2: 'Al entender profundamente sus operaciones y ambiciones, creamos software que se adapta a usted, no al revés. Desde la experiencia del usuario hasta la lógica backend, todo está personalizado. Porque su negocio merece más que un producto genérico: merece un socio.',
+      about_sub2_title: 'Construyamos la Solución Correcta, Juntos',
+      about_sub2_desc1: 'Todo software exitoso comienza con una conversación significativa. En Mulet International, nos tomamos el tiempo para entender sus metas, desafíos y visión.',
+      about_sub2_desc2: 'A través de un diálogo colaborativo, convertimos sus necesidades únicas de negocio en software potente y personalizado. Ya sea que comience desde cero o optimice sistemas existentes, nuestro equipo está aquí para co-crear herramientas que realmente marquen la diferencia. Su éxito es nuestro plano.',
+      whyus_1_title: 'Soluciones de Software Personalizadas',
+      whyus_1_desc: 'Construimos software alrededor de su negocio, no al revés. Cada línea de código se crea para cumplir con sus metas exactas, flujos de trabajo y requisitos de la industria.',
+      whyus_2_title: 'Enfoque Centrado en las Personas',
+      whyus_2_desc: 'Creemos que el gran software comienza con empatía. Nuestro equipo escucha con atención, colabora abiertamente y asegura que esté involucrado en cada paso del viaje de desarrollo.',
+      whyus_3_title: 'Experiencia Global, Sensación Local',
+      whyus_3_desc: 'Con expertise internacional y atención personalizada, traemos estándares globales a su proyecto mientras construimos una asociación que se siente cercana y accesible.',
+      stats_happy_clients: 'Clientes Felices',
+      stats_projects: 'Proyectos',
+      stats_hours_support: 'Horas de Soporte',
+      stats_hard_workers: 'Trabajadores Duros',
+      services_title: 'Servicios',
+      services_desc: 'En Mulet International, ofrecemos desarrollo de software personalizado, soluciones de computación en la nube y capacitación práctica adaptada a las necesidades de su negocio. Nuestra misión es entregar servicios de TI confiables, escalables e innovadores mientras construimos relaciones a largo plazo basadas en confianza, transparencia y resultados. Su éxito es nuestra prioridad más alta.',
+      service1_title: 'Aplicaciones Personalizadas',
+      service1_desc: 'Diseñamos y construimos software personalizado adaptado a sus necesidades únicas de negocio, asegurando funcionalidad, escalabilidad y valor a largo plazo.',
+      service2_title: 'Infraestructura en la Nube',
+      service2_desc: 'Le ayudamos a migrar, construir y escalar sus sistemas en la nube usando AWS, Azure o GCP, maximizando el rendimiento y reduciendo costos.',
+      service3_title: 'Capacitación Técnica',
+      service3_desc: 'Ofrecemos talleres prácticos y coaching para mejorar las habilidades de sus equipos en las últimas tecnologías, mejores prácticas y flujos de trabajo de desarrollo.',
+      service4_title: 'Pila Tecnológica Moderna',
+      service4_desc: 'Nuestros desarrolladores usan marcos y herramientas de vanguardia para entregar soluciones rápidas, seguras y mantenibles para plataformas web y móviles.',
+      service5_title: 'DevOps y Automatización',
+      service5_desc: 'Nuestros servicios en la nube incluyen pipelines CI/CD, infraestructura como código y monitoreo automatizado para mantener sus sistemas funcionando sin problemas.',
+      service6_title: 'Capacitación en Software',
+      service6_desc: 'Proporcionamos sesiones de capacitación personalizadas para ayudar a su equipo a dominar nuestro software personalizado, asegurando una adopción suave, uso confiado y máxima eficiencia en las operaciones diarias.',
+      portfolio_title: 'Portafolio',
+      portfolio_desc: 'Hemos trabajado en una amplia gama de proyectos, incluyendo plataformas de negocio, portales de clientes y soluciones de e-commerce. Estamos trabajando ahora en nuestro proyecto principal: Harmony System',
+      portfolio_filter_all: 'Todos',
+      portfolio_filter_business: 'Plataformas de Negocio',
+      portfolio_filter_client: 'Portales de Clientes',
+      portfolio_filter_ecommerce: 'Soluciones de E-commerce',
+      portfolio_item1_title: 'Plataformas de Negocio',
+      portfolio_item1_desc: 'ERP Financiero Modular',
+      portfolio_item2_title: 'Portales de Clientes',
+      portfolio_item2_desc: 'Portal de Soporte al Cliente',
+      portfolio_item3_title: 'Soluciones de E-commerce',
+      portfolio_item3_desc: 'Tienda de Productos Naturales',
+      portfolio_item4_title: 'Plataformas de Negocio',
+      portfolio_item4_desc: 'Sistema de Recursos Humanos',
+      portfolio_item5_title: 'Portales de Clientes',
+      portfolio_item5_desc: 'Portal de Facturación y Pagos',
+      portfolio_item6_title: 'Soluciones de E-commerce',
+      portfolio_item6_desc: 'Mercado B2B',
+      portfolio_item7_title: 'Plataformas de Negocio',
+      portfolio_item7_desc: 'CRM de Ventas Personalizado',
+      portfolio_item8_title: 'Portales de Clientes',
+      portfolio_item8_desc: 'Portal de Aprendizaje en Línea',
+      portfolio_item9_title: 'Soluciones de E-commerce',
+      portfolio_item9_desc: 'E-commerce Basado en Suscripciones',
+      case_studies_title: 'Algunos de Nuestros Clientes',
+      case_studies_desc: 'Colaboración fluida para definir, diseñar y desarrollar sistemas digitales personalizados en todas las industrias.',
+      team_title: 'Equipo',
+      team_desc: 'Nuestro equipo está compuesto por profesionales dedicados que son apasionados por lo que hacen y comprometidos a entregar resultados excepcionales.',
+      team_member1_role: 'Fundador / Director Ejecutivo',
+      team_member2_role: 'Fundador / Inversionista',
+      team_member3_role: 'Fundador / Ingeniero Full Stack Sr.',
+      team_member4_role: 'Arquitectura de Software/Experto en Nube',
+      team_member5_role: 'Desarrollador de Software',
+      footer_phone: 'Teléfono:',
+      footer_email: 'Correo:',
+      footer_useful_links: 'Enlaces Útiles',
+      footer_about_us: 'Acerca de nosotros',
+      footer_terms: 'Términos de servicio',
+      footer_privacy: 'Política de privacidad',
+      footer_our_services: 'Nuestros Servicios',
+      footer_service_web_design: 'Diseño Web',
+      footer_service_web_dev: 'Desarrollo Web',
+      footer_service_product_mgmt: 'Gestión de Productos',
+      footer_service_marketing: 'Marketing',
+      footer_service_graphic: 'Diseño Gráfico',
+      footer_copyright: 'Derechos de autor',
+      footer_all_rights: 'Todos los Derechos Reservados'
     }
+  };
 
-    langToggle.addEventListener('click', () => {
-      updateLanguage(currentLang === 'en' ? 'es' : 'en');
+  let currentLang = localStorage.getItem('lang') || 'en';  // Default: inglés
+  const langToggle = document.getElementById('lang-toggle');
+  const langText = document.getElementById('lang-text');
+
+  function switchLanguage(lang) {
+    document.querySelectorAll('[data-translate]').forEach(el => {
+      const key = el.getAttribute('data-translate');
+      if (translations[lang][key]) {
+        el.innerHTML = translations[lang][key];  // Usa innerHTML para preservar <b> u otros tags
+      }
     });
+    localStorage.setItem('lang', lang);
+    // Actualiza el botón: muestra el idioma opuesto para toggle
+    langText.textContent = lang === 'en' ? 'ES' : 'EN';
+    // Actualiza lang del HTML para accesibilidad/SEO
+    document.documentElement.lang = lang;
+  }
 
-    // Detectar idioma actual basado en la URL
-    const path = window.location.pathname;
-    if (path.includes('/es/')) {
-      currentLang = 'es';
-      langText.textContent = 'ES / EN';
-    }
+  switchLanguage(currentLang);  // Aplica al cargar
+
+  langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'es' : 'en';
+    switchLanguage(currentLang);
+  });
 });
