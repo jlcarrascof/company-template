@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title data-translate="blog_page_title">Blog - Mulet International</title>
+  <title>Blog - Mulet International</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,13 +36,62 @@
 </head>
 
 <body>
-  <main id="main"> <!-- Quitamos el margin-top: 80px; ya que no hay header -->
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">muletinternational@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 (786) 445 - 2972</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Mulet International</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="javascript:void(0);" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/entrenamientospuntonet'});return false;">Book</a>
+            </li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main id="main" style="margin-top: 80px;">
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog section">
       <div class="container">
         <div class="section-title">
-          <h2 data-translate="blog_title">Blog & Technical Insights</h2>
-          <p data-translate="blog_desc">Explore how our team delivers software excellence through modern technologies and innovative practices.</p>
+          <h2>Blog & Technical Insights</h2>
+          <p>Explore how our team delivers software excellence through modern technologies and innovative practices.</p>
         </div>
 
         <div class="row">
@@ -51,9 +100,9 @@
             <div class="card h-100">
               <img src="assets/img/blog/SaaS.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title" data-translate="blog_post1_title">Why Custom Software Wins Over SaaS</h5>
-                <p class="card-text" data-translate="blog_post1_desc">In today’s digital landscape, businesses rely heavily on software solutions to streamline operations, enhance productivity, and deliver exceptional customer experiences. When it comes to choosing the right software approach for your business, two popular options stand out: Software as a Service (SaaS) and custom software development. Each option offers unique benefits and considerations that can significantly impact your business outcomes. In this article, we will compare SaaS and custom software to help you determine which is the best fit for your business needs. Additionally, we will showcase how CloudApper, a leading software solution provider, can meet your requirements and drive your business forward.</p>
-                <a href="#" class="btn btn-link" data-translate="blog_read_more">Read more</a>
+                <h5 class="card-title">Why Custom Software Wins Over SaaS</h5>
+                <p class="card-text">In today’s digital landscape, businesses rely heavily on software solutions to streamline operations, enhance productivity, and deliver exceptional customer experiences. When it comes to choosing the right software approach for your business, two popular options stand out: Software as a Service (SaaS) and custom software development. Each option offers unique benefits and considerations that can significantly impact your business outcomes. In this article, we will compare SaaS and custom software to help you determine which is the best fit for your business needs. Additionally, we will showcase how CloudApper, a leading software solution provider, can meet your requirements and drive your business forward.</p>
+                <a href="#" class="btn btn-link">Read more</a>
               </div>
             </div>
           </div>
@@ -63,10 +112,10 @@
             <div class="card h-100">
               <img src="assets/img/blog/agile.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title" data-translate="blog_post2_title">Agile in Practice: Tips from Our Dev Team</h5>
-                <p class="card-text" data-translate="blog_post2_desc">The term “Agile” signifies a mindset that values flexibility in development and encourages continuous delivery of high-quality outcomes. <br><br>
+                <h5 class="card-title">Agile in Practice: Tips from Our Dev Team</h5>
+                <p class="card-text">The term “Agile” signifies a mindset that values flexibility in development and encourages continuous delivery of high-quality outcomes. <br><br>
                      This article explores Agile methodology, its key principles, main frameworks, and real-world benefits. This method helps teams tackle common challenges and follow best practices for a seamless and successful implementation.</p>
-                <a href="#" class="btn btn-link" data-translate="blog_read_more">Read more</a>
+                <a href="#" class="btn btn-link">Read more</a>
               </div>
             </div>
           </div>
@@ -76,9 +125,9 @@
             <div class="card h-100">
               <img src="assets/img/blog/aws.png" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title" data-translate="blog_post3_title">Scaling Applications with AWS DevOps</h5>
-                <p class="card-text" data-translate="blog_post3_desc">In today’s rapidly evolving digital landscape, scalability is a cornerstone of modern application development and deployment. With businesses striving to deliver high-quality services to a growing user base, the need for robust and efficient scaling mechanisms has never been greater. Amazon Web Services (AWS) and DevOps practices together provide a powerful framework for scaling applications dynamically and reliably. This article delves into how AWS DevOps facilitates application scalability and ensures consistent performance under varying workloads.</p>
-                <a href="#" class="btn btn-link" data-translate="blog_read_more">Read more</a>
+                <h5 class="card-title">Scaling Applications with AWS DevOps</h5>
+                <p class="card-text">In today’s rapidly evolving digital landscape, scalability is a cornerstone of modern application development and deployment. With businesses striving to deliver high-quality services to a growing user base, the need for robust and efficient scaling mechanisms has never been greater. Amazon Web Services (AWS) and DevOps practices together provide a powerful framework for scaling applications dynamically and reliably. This article delves into how AWS DevOps facilitates application scalability and ensures consistent performance under varying workloads.</p>
+                <a href="#" class="btn btn-link">Read more</a>
               </div>
             </div>
           </div>
@@ -99,8 +148,8 @@
           <div class="footer-contact pt-3">
             <p>13371 SW 190th Terrace</p>
             <p>Miami Fl, 33177</p>
-            <p class="mt-3"><strong data-translate="footer_phone">Phone:</strong> <span>+1 (786) 445 - 2972</span></p>
-            <p><strong data-translate="footer_email">Email:</strong> <span>muletinternational@gmail.com</span></p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 (786) 445 - 2972</span></p>
+            <p><strong>Email:</strong> <span>muletinternational@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -111,31 +160,31 @@
         </div>
 
         <div class="col-lg-4 col-md-3 footer-links">
-          <h4 data-translate="footer_useful_links">Useful Links</h4>
+          <h4>Useful Links</h4>
           <ul>
-            <li><a href="index.html" data-translate="nav_home">Home</a></li>
-            <li><a href="#about" data-translate="footer_about_us">About us</a></li>
-            <li><a href="#services" data-translate="nav_services">Services</a></li>
-            <li><a href="#" data-translate="footer_terms">Terms of service</a></li>
-            <li><a href="#" data-translate="footer_privacy">Privacy policy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-3 footer-links">
-          <h4 data-translate="footer_our_services">Our Services</h4>
+          <h4>Our Services</h4>
           <ul>
-            <li><a href="#" data-translate="footer_service_web_design">Web Design</a></li>
-            <li><a href="#" data-translate="footer_service_web_dev">Web Development</a></li>
-            <li><a href="#" data-translate="footer_service_product_mgmt">Product Management</a></li>
-            <li><a href="#" data-translate="footer_service_marketing">Marketing</a></li>
-            <li><a href="#" data-translate="footer_service_graphic">Graphic Design</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span data-translate="footer_copyright">Copyright</span> <strong class="px-1 sitename">Mulet International</strong> <span data-translate="footer_all_rights">All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mulet International</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
       </div>
     </div>
@@ -170,8 +219,6 @@
   <!-- Calendly -->
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-  <!-- Toggle language (para aplicar el idioma guardado) -->
-  <script src="assets/js/language.js"></script>
 
 </body>
 
