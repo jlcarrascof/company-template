@@ -102,7 +102,17 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_service_marketing: 'Marketing',
       footer_service_graphic: 'Graphic Design',
       footer_copyright: 'Copyright',
-      footer_all_rights: 'All Rights Reserved'
+      footer_all_rights: 'All Rights Reserved',
+      blog_page_title: 'Blog - Mulet International',
+      blog_title: 'Blog & Technical Insights',
+      blog_desc: 'Explore how our team delivers software excellence through modern technologies and innovative practices.',
+      blog_post1_title: 'Why Custom Software Wins Over SaaS',
+      blog_post1_desc: 'In today’s digital landscape, businesses rely heavily on software solutions to streamline operations, enhance productivity, and deliver exceptional customer experiences. When it comes to choosing the right software approach for your business, two popular options stand out: Software as a Service (SaaS) and custom software development. Each option offers unique benefits and considerations that can significantly impact your business outcomes. In this article, we will compare SaaS and custom software to help you determine which is the best fit for your business needs. Additionally, we will showcase how CloudApper, a leading software solution provider, can meet your requirements and drive your business forward.',
+      blog_post2_title: 'Agile in Practice: Tips from Our Dev Team',
+      blog_post2_desc: 'The term “Agile” signifies a mindset that values flexibility in development and encourages continuous delivery of high-quality outcomes. <br><br> This article explores Agile methodology, its key principles, main frameworks, and real-world benefits. This method helps teams tackle common challenges and follow best practices for a seamless and successful implementation.',
+      blog_post3_title: 'Scaling Applications with AWS DevOps',
+      blog_post3_desc: 'In today’s rapidly evolving digital landscape, scalability is a cornerstone of modern application development and deployment. With businesses striving to deliver high-quality services to a growing user base, the need for robust and efficient scaling mechanisms has never been greater. Amazon Web Services (AWS) and DevOps practices together provide a powerful framework for scaling applications dynamically and reliably. This article delves into how AWS DevOps facilitates application scalability and ensures consistent performance under varying workloads.',
+      blog_read_more: 'Read more',
     },
     es: {
       page_title: 'Índice - Mulet International',
@@ -207,7 +217,17 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_service_marketing: 'Marketing',
       footer_service_graphic: 'Diseño Gráfico',
       footer_copyright: 'Derechos de autor',
-      footer_all_rights: 'Todos los Derechos Reservados'
+      footer_all_rights: 'Todos los Derechos Reservados',
+      blog_page_title: 'Blog - Mulet International',
+      blog_title: 'Blog & Insights Técnicos',
+      blog_desc: 'Explora cómo nuestro equipo entrega excelencia en software a través de tecnologías modernas y prácticas innovadoras.',
+      blog_post1_title: 'Por Qué el Software Personalizado Gana Sobre SaaS',
+      blog_post1_desc: 'En el panorama digital actual, las empresas dependen en gran medida de soluciones de software para optimizar operaciones, mejorar la productividad y ofrecer experiencias excepcionales al cliente. Al elegir el enfoque de software adecuado para su negocio, dos opciones populares destacan: Software como Servicio (SaaS) y desarrollo de software personalizado. Cada opción ofrece beneficios únicos y consideraciones que pueden impactar significativamente en los resultados de su negocio. En este artículo, compararemos SaaS y software personalizado para ayudarle a determinar cuál es la mejor opción para sus necesidades. Además, mostraremos cómo CloudApper, un proveedor líder de soluciones de software, puede satisfacer sus requisitos e impulsar su negocio.',
+      blog_post2_title: 'Ágil en la Práctica: Consejos de Nuestro Equipo de Dev',
+      blog_post2_desc: 'El término “Ágil” significa una mentalidad que valora la flexibilidad en el desarrollo y fomenta la entrega continua de resultados de alta calidad. <br><br> Este artículo explora la metodología Ágil, sus principios clave, marcos principales y beneficios en el mundo real. Este método ayuda a los equipos a enfrentar desafíos comunes y seguir las mejores prácticas para una implementación fluida y exitosa.',
+      blog_post3_title: 'Escalando Aplicaciones con AWS DevOps',
+      blog_post3_desc: 'En el panorama digital en rápida evolución actual, la escalabilidad es una piedra angular del desarrollo y despliegue de aplicaciones modernas. Con las empresas esforzándose por entregar servicios de alta calidad a una base de usuarios en crecimiento, la necesidad de mecanismos de escalado robustos y eficientes nunca ha sido mayor. Amazon Web Services (AWS) y las prácticas DevOps juntos proporcionan un marco poderoso para escalar aplicaciones de manera dinámica y confiable. Este artículo profundiza en cómo AWS DevOps facilita la escalabilidad de aplicaciones y asegura un rendimiento consistente bajo cargas variables.',
+      blog_read_more: 'Leer más',
     }
   };
 
