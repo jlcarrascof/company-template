@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     en: {
       page_title: 'Index - Mulet International',
       lang_toggle: 'EN / ES',
+      nav_home: 'Home',
       nav_about: 'About',
       nav_services: 'Services',
       nav_portfolio: 'Portfolio',
@@ -103,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_service_graphic: 'Graphic Design',
       footer_copyright: 'Copyright',
       footer_all_rights: 'All Rights Reserved',
-      blog_page_title: 'Blog - Mulet International',
       blog_title: 'Blog & Technical Insights',
       blog_desc: 'Explore how our team delivers software excellence through modern technologies and innovative practices.',
       blog_post1_title: 'Why Custom Software Wins Over SaaS',
@@ -218,7 +218,6 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_service_graphic: 'Diseño Gráfico',
       footer_copyright: 'Derechos de autor',
       footer_all_rights: 'Todos los Derechos Reservados',
-      blog_page_title: 'Blog - Mulet International',
       blog_title: 'Blog & Insights Técnicos',
       blog_desc: 'Explora cómo nuestro equipo entrega excelencia en software a través de tecnologías modernas y prácticas innovadoras.',
       blog_post1_title: 'Por Qué el Software Personalizado Gana Sobre SaaS',
