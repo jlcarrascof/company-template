@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     en: {
       page_title: 'Index - Mulet International',
       lang_toggle: 'EN / ES',
-      nav_home: 'Home',
       nav_about: 'About',
       nav_services: 'Services',
       nav_portfolio: 'Portfolio',
