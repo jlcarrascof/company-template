@@ -1784,3 +1784,20 @@ section,
     transform: translateX(-50%);
   }
 }
+
+.logo-container {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.logo-img {
+  max-width: 30px;
+  height: auto;
+}
+
+.topbar {
+  position: relative;
+}
+
