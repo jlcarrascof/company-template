@@ -233,26 +233,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentLang = localStorage.getItem('lang') || 'en';  // Default: inglés
   const langToggle = document.getElementById('lang-toggle');
-  const langText = document.getElementById('lang-text');
+  const langText = document.getElementById('lang-text');  
 
   function switchLanguage(lang) {
     document.querySelectorAll('[data-translate]').forEach(el => {
       const key = el.getAttribute('data-translate');
       if (translations[lang][key]) {
-        el.innerHTML = translations[lang][key];  // Usa innerHTML para preservar <b> u otros tags
+        el.innerHTML = translations[lang][key];  
       }
     });
     localStorage.setItem('lang', lang);
-    // Actualiza el botón: muestra el idioma opuesto para toggle
-    langText.textContent = lang === 'en' ? 'ES' : 'EN';
-    // Actualiza lang del HTML para accesibilidad/SEO
     document.documentElement.lang = lang;
+    if (langText) {
+      langText.textContent = lang === 'en' ? 'ES' : 'EN';
+    }
   }
 
-  switchLanguage(currentLang);  // Aplica al cargar
+  switchLanguage(currentLang);  
 
-  langToggle.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'es' : 'en';
-    switchLanguage(currentLang);
-  });
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'es' : 'en';
+      switchLanguage(currentLang);
+    });
+  }
 });
