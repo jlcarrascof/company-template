@@ -103,7 +103,39 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_service_marketing: 'Marketing',
       footer_service_graphic: 'Graphic Design',
       footer_copyright: 'Copyright',
-      footer_all_rights: 'All Rights Reserved'
+      footer_all_rights: 'All Rights Reserved',
+      blog_title: 'Blog & Technical Insights',
+      blog_desc: 'Explore how our team delivers software excellence through modern technologies and innovative practices.',
+      blog_post1_title: 'Why Custom Software Wins Over SaaS',
+      blog_post1_desc: 'In today’s digital landscape, businesses rely heavily on software solutions to streamline operations, enhance productivity, and deliver exceptional customer experiences. When it comes to choosing the right software approach for your business, two popular options stand out: Software as a Service (SaaS) and custom software development. Each option offers unique benefits and considerations that can significantly impact your business outcomes. In this article, we will compare SaaS and custom software to help you determine which is the best fit for your business needs. Additionally, we will showcase how CloudApper, a leading software solution provider, can meet your requirements and drive your business forward.',
+      blog_post2_title: 'Agile in Practice: Tips from Our Dev Team',
+      blog_post2_desc: 'The term “Agile” signifies a mindset that values flexibility in development and encourages continuous delivery of high-quality outcomes. <br><br> This article explores Agile methodology, its key principles, main frameworks, and real-world benefits. This method helps teams tackle common challenges and follow best practices for a seamless and successful implementation.',
+      blog_post3_title: 'Scaling Applications with AWS DevOps',
+      blog_post3_desc: 'In today’s rapidly evolving digital landscape, scalability is a cornerstone of modern application development and deployment. With businesses striving to deliver high-quality services to a growing user base, the need for robust and efficient scaling mechanisms has never been greater. Amazon Web Services (AWS) and DevOps practices together provide a powerful framework for scaling applications dynamically and reliably. This article delves into how AWS DevOps facilitates application scalability and ensures consistent performance under varying workloads.',
+      blog_read_more: 'Read more',
+      contact_page_title: 'Contact - Mulet International',
+      contact_title: 'Contact Us',
+      contact_subtitle: 'Please, feel free to contact us.',
+      contact_location_title: 'Our Location',
+      contact_address_title: 'Address',
+      contact_address: '13371 SW 190th Terrace Miami Fl, 33177',
+      contact_call_title: 'Call Us',
+      contact_schedule_title: 'Schedule a Call',
+      contact_schedule_btn: 'Book Now',
+      contact_form_title: 'Get in Touch',
+      contact_form_firstname: 'Firstname',
+      contact_form_lastname: 'Lastname',
+      contact_form_email: 'Email',
+      contact_form_phone: 'Phone',
+      contact_form_subject: 'Subject',
+      contact_form_subject_general: 'General Inquiry',
+      contact_form_subject_support: 'Support',
+      contact_form_subject_sales: 'Sales',
+      contact_form_message: 'Message/Inquiry',
+      contact_form_accept: 'I accept receiving communications from Mulet International.',
+      contact_form_send: 'Send Now',
+      contact_info_text: "Let's talk about your ideas and how we can help you to build the website of your dreams. You can expect to hear from us within 24 hours, but we will get back to you asap.",
+      contact_headquarter: 'Headquarter',
     },
     es: {
       page_title: 'Índice - Mulet International',
@@ -208,32 +240,66 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_service_marketing: 'Marketing',
       footer_service_graphic: 'Diseño Gráfico',
       footer_copyright: 'Derechos de autor',
-      footer_all_rights: 'Todos los Derechos Reservados'
+      footer_all_rights: 'Todos los Derechos Reservados',
+      blog_title: 'Blog & Insights Técnicos',
+      blog_desc: 'Explora cómo nuestro equipo entrega excelencia en software a través de tecnologías modernas y prácticas innovadoras.',
+      blog_post1_title: 'Por Qué el Software Personalizado Gana Sobre SaaS',
+      blog_post1_desc: 'En el panorama digital actual, las empresas dependen en gran medida de soluciones de software para optimizar operaciones, mejorar la productividad y ofrecer experiencias excepcionales al cliente. Al elegir el enfoque de software adecuado para su negocio, dos opciones populares destacan: Software como Servicio (SaaS) y desarrollo de software personalizado. Cada opción ofrece beneficios únicos y consideraciones que pueden impactar significativamente en los resultados de su negocio. En este artículo, compararemos SaaS y software personalizado para ayudarle a determinar cuál es la mejor opción para sus necesidades. Además, mostraremos cómo CloudApper, un proveedor líder de soluciones de software, puede satisfacer sus requisitos e impulsar su negocio.',
+      blog_post2_title: 'Ágil en la Práctica: Consejos de Nuestro Equipo de Dev',
+      blog_post2_desc: 'El término “Ágil” significa una mentalidad que valora la flexibilidad en el desarrollo y fomenta la entrega continua de resultados de alta calidad. <br><br> Este artículo explora la metodología Ágil, sus principios clave, marcos principales y beneficios en el mundo real. Este método ayuda a los equipos a enfrentar desafíos comunes y seguir las mejores prácticas para una implementación fluida y exitosa.',
+      blog_post3_title: 'Escalando Aplicaciones con AWS DevOps',
+      blog_post3_desc: 'En el panorama digital en rápida evolución actual, la escalabilidad es una piedra angular del desarrollo y despliegue de aplicaciones modernas. Con las empresas esforzándose por entregar servicios de alta calidad a una base de usuarios en crecimiento, la necesidad de mecanismos de escalado robustos y eficientes nunca ha sido mayor. Amazon Web Services (AWS) y las prácticas DevOps juntos proporcionan un marco poderoso para escalar aplicaciones de manera dinámica y confiable. Este artículo profundiza en cómo AWS DevOps facilita la escalabilidad de aplicaciones y asegura un rendimiento consistente bajo cargas variables.',
+      blog_read_more: 'Leer más',
+      contact_page_title: 'Contacto - Mulet International',
+      contact_title: 'Contacto',
+      contact_subtitle: 'No dudes en contactarnos.',
+      contact_location_title: 'Nuestra Ubicación',
+      contact_address_title: 'Dirección',
+      contact_address: '13371 SW 190th Terrace Miami Fl, 33177',
+      contact_call_title: 'Llámenos',
+      contact_schedule_title: 'Agendar una Llamada',
+      contact_schedule_btn: 'Reservar Ahora',
+      contact_form_title: 'Contáctanos',
+      contact_form_firstname: 'Nombre',
+      contact_form_lastname: 'Apellido',
+      contact_form_email: 'Correo',
+      contact_form_phone: 'Teléfono',
+      contact_form_subject: 'Asunto',
+      contact_form_subject_general: 'Consulta General',
+      contact_form_subject_support: 'Soporte',
+      contact_form_subject_sales: 'Ventas',
+      contact_form_message: 'Mensaje/Consulta',
+      contact_form_accept: 'Acepto recibir comunicaciones de Mulet International.',
+      contact_form_send: 'Enviar Ahora',
+      contact_info_text: "Hablemos de tus ideas y cómo podemos ayudarte a construir el sitio web de tus sueños. Puedes esperar nuestra respuesta en menos de 24 horas, pero te contactaremos lo antes posible.",
+      contact_headquarter: 'Sede Principal',      
     }
   };
 
   let currentLang = localStorage.getItem('lang') || 'en';  // Default: inglés
   const langToggle = document.getElementById('lang-toggle');
-  const langText = document.getElementById('lang-text');
+  const langText = document.getElementById('lang-text');  
 
   function switchLanguage(lang) {
     document.querySelectorAll('[data-translate]').forEach(el => {
       const key = el.getAttribute('data-translate');
       if (translations[lang][key]) {
-        el.innerHTML = translations[lang][key];  // Usa innerHTML para preservar <b> u otros tags
+        el.innerHTML = translations[lang][key];  
       }
     });
     localStorage.setItem('lang', lang);
-    // Actualiza el botón: muestra el idioma opuesto para toggle
-    langText.textContent = lang === 'en' ? 'ES' : 'EN';
-    // Actualiza lang del HTML para accesibilidad/SEO
     document.documentElement.lang = lang;
+    if (langText) {
+      langText.textContent = lang === 'en' ? 'ES' : 'EN';
+    }
   }
 
-  switchLanguage(currentLang);  // Aplica al cargar
+  switchLanguage(currentLang);  
 
-  langToggle.addEventListener('click', () => {
-    currentLang = currentLang === 'en' ? 'es' : 'en';
-    switchLanguage(currentLang);
-  });
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'es' : 'en';
+      switchLanguage(currentLang);
+    });
+  }
 });

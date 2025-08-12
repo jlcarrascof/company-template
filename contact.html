@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Mulet International</title>
+  <title data-translate="contact_page_title">Contact - Mulet International</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -22,23 +21,14 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- Leaflet CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  />
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-
 </head>
-
 <body class="index-page">
-
   <header id="header" class="header sticky-top">
-
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
@@ -51,173 +41,149 @@
           <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
           <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
+        <div class="language-switch">
+          <button id="lang-toggle" class="btn btn-sm btn-outline-primary">
+            <span id="lang-text" data-translate="lang_toggle">EN / ES</span>
+          </button>
+        </div>
       </div>
     </div>
-
-    <div class="branding d-flex align-items-cente">
-
+    <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
           <h1 class="sitename">Mulet International</h1>
         </a>
-
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#case-studies">Case Studies</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="index.html" data-translate="nav_home">Home</a></li>
+            <li><a href="index.html#about" data-translate="nav_about">About</a></li>
+            <li><a href="index.html#services" data-translate="nav_services">Services</a></li>
+            <li><a href="index.html#portfolio" data-translate="nav_portfolio">Portfolio</a></li>
+            <li><a href="index.html#case-studies" data-translate="nav_case_studies">Case Studies</a></li>
+            <li><a href="index.html#team" data-translate="nav_team">Team</a></li>
+            <li><a href="contact.html" class="active" data-translate="nav_contact">Contact</a></li>
             <li>
-              <a href="javascript:void(0);" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/entrenamientospuntonet'});return false;">Book</a>
+              <a href="javascript:void(0);" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/entrenamientospuntonet'});return false;" data-translate="nav_book">Book</a>
             </li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html" data-translate="nav_blog">Blog</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
       </div>
-
     </div>
-
   </header>
 
   <main class="main">
-
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Please, feel free to contact us.</p>
+        <h2 data-translate="contact_title">Contact</h2>
+        <p data-translate="contact_subtitle">Please, feel free to contact us.</p>
       </div><!-- End Section Title -->
-
       <!-- Start Map Section -->
       <div class="container mb-5" data-aos="fade-up" data-aos-delay="50">
-        <h4 class="mb-3">Our Location</h4>
+        <h4 class="mb-3" data-translate="contact_location_title">Our Location</h4>
         <div id="map" style="height: 350px; width: 100%; border-radius: 12px;"></div>
       </div>
       <!-- End Map Section -->
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-
           <div class="col-lg-4 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <p>13371 SW 190th Terrace Miami Fl, 33177</p>
+              <h3 data-translate="contact_address_title">Address</h3>
+              <p data-translate="contact_address">13371 SW 190th Terrace Miami Fl, 33177</p>
             </div>
           </div><!-- End Info Item -->
-
           <div class="col-lg-4 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
+              <h3 data-translate="contact_call_title">Call Us</h3>
               <p>+1 (786) 445 - 2972</p>
             </div>
           </div><!-- End Info Item -->
-
-          <!--          
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal" class="btn btn-outline-primary mt-2">Send a Message</a>
-            </div>
-          </div>
-          -->
-
           <div class="col-lg-4 col-md-6">
             <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="500">
-            <i class="bi bi-calendar-event"></i>
-            <h3>Schedule a Call</h3>
-            <a href="javascript:void(0);" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/entrenamientospuntonet'}); return false;" class="btn btn-outline-primary mt-2">
-              Book Now
-            </a>
+              <i class="bi bi-calendar-event"></i>
+              <h3 data-translate="contact_schedule_title">Schedule a Call</h3>
+              <a href="javascript:void(0);" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/entrenamientospuntonet'}); return false;" class="btn btn-outline-primary mt-2" data-translate="contact_schedule_btn">
+                Book Now
+              </a>
+            </div>
           </div>
         </div>
-
       </div>
-
-<hr>      
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <!-- Form and Contact Info -->
-            <div class="col-lg-12">
-              <div class="row">
-                <!-- Left Column: Form -->
-                <div class="col-md-6 form-container">
-                  <h3>Get in Touch</h3>
-                  <form id="contact-form" action="https://formspree.io/f/mknaqnpb" method="POST" data-aos="fade-up">
-                    <div class="row gy-4">
-                      <div class="col-md-6">
-                        <input type="text" name="name" class="form-control" placeholder="Firstname" required>
-                      </div>
-                      <div class="col-md-6">
-                        <input type="text" name="lastname" class="form-control" placeholder="Lastname" required>
-                      </div>
-                      <div class="col-md-6">
-                        <input type="email" name="email" class="form-control" placeholder="Email" required>
-                      </div>
-                      <div class="col-md-6">
-                        <input type="tel" name="phone" class="form-control" placeholder="Phone" required>
-                      </div>
-                      <div class="col-12">
-                        <select name="subject" class="form-control" required>
-                          <option value="" disabled selected>Subject</option>
-                          <option value="general">General Inquiry</option>
-                          <option value="support">Support</option>
-                          <option value="sales">Sales</option>
-                        </select>
-                      </div>
-                      <div class="col-12">
-                        <textarea name="message" class="form-control" rows="6" placeholder="Message/Inquiry" required></textarea>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-check">
-                          <input type="checkbox" class="form-check-input" id="acceptTerms" required>
-                          <label class="form-check-label" for="acceptTerms">I accept receiving communications from Mulet International.</label>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <button type="submit" class="btn btn-primary w-100">Send Now</button>
+      <hr>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <!-- Form and Contact Info -->
+          <div class="col-lg-12">
+            <div class="row">
+              <!-- Left Column: Form -->
+              <div class="col-md-6 form-container">
+                <h3 data-translate="contact_form_title">Get in Touch</h3>
+                <form id="contact-form" action="https://formspree.io/f/mknaqnpb" method="POST" data-aos="fade-up">
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Firstname" data-language-placeholder="contact_form_firstname" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" name="lastname" class="form-control" placeholder="Lastname" data-language-placeholder="contact_form_lastname" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="email" name="email" class="form-control" placeholder="Email" data-language-placeholder="contact_form_email" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="tel" name="phone" class="form-control" placeholder="Phone" data-language-placeholder="contact_form_phone" required>
+                    </div>
+                    <div class="col-12">
+                      <select name="subject" class="form-control" required>
+                        <option value="" disabled selected data-translate="contact_form_subject">Subject</option>
+                        <option value="general" data-translate="contact_form_subject_general">General Inquiry</option>
+                        <option value="support" data-translate="contact_form_subject_support">Support</option>
+                        <option value="sales" data-translate="contact_form_subject_sales">Sales</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <textarea name="message" class="form-control" rows="6" placeholder="Message/Inquiry" data-language-placeholder="contact_form_message" required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="acceptTerms" required>
+                        <label class="form-check-label" for="acceptTerms" data-translate="contact_form_accept">I accept receiving communications from Mulet International.</label>
                       </div>
                     </div>
-                  </form>
-                </div>
-                <!-- Right Column: Contact Info -->
-                <div class="col-md-6">
-                  <p>Let's talk about your ideas and how we can help you to build the website of your dreams. You can expect to hear from us within 24 hours, but we will get back to you asap.</p>
-                  <hr class="accent-line">
-                  <h6>Headquarter</h6>
-                  <p>13371 SW 190th Terrace, Miami, FL 33177</p>
-                  <p>+1 (786) 445 - 2972</p>
-                  <p>muletinternational@gmail.com</p>
-                  <div class="social-links">
-                    <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary w-100" data-translate="contact_form_send">Send Now</button>
+                    </div>
                   </div>
+                </form>
+              </div>
+              <!-- Right Column: Contact Info -->
+              <div class="col-md-6">
+                <p data-translate="contact_info_text">
+                  Let's talk about your ideas and how we can help you to build the website of your dreams. You can expect to hear from us within 24 hours, but we will get back to you asap.
+                </p>
+                <hr class="accent-line">
+                <h6 data-translate="contact_headquarter">Headquarter</h6>
+                <p data-translate="contact_address">13371 SW 190th Terrace, Miami, FL 33177</p>
+                <p>+1 (786) 445 - 2972</p>
+                <p>muletinternational@gmail.com</p>
+                <div class="social-links">
+                  <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
     </section><!-- /Contact Section -->
-
   </main>
 
   <footer id="footer" class="footer light-background">
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
@@ -225,10 +191,10 @@
             <span class="sitename">Mulet International</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>13371 SW 190th Terrace</p>
+            <p data-translate="contact_address">13371 SW 190th Terrace</p>
             <p>Miami Fl, 33177</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 (786) 445 - 2972</span></p>
-            <p><strong>Email:</strong> <span>muletinternational@gmail.com</span></p>
+            <p class="mt-3"><strong data-translate="footer_phone">Phone:</strong> <span>+1 (786) 445 - 2972</span></p>
+            <p><strong data-translate="footer_email">Email:</strong> <span>muletinternational@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -237,41 +203,31 @@
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-
         <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-translate="footer_useful_links">Useful Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="index.html" data-translate="nav_home">Home</a></li>
+            <li><a href="index.html#about" data-translate="nav_about">About us</a></li>
+            <li><a href="index.html#services" data-translate="nav_services">Services</a></li>
+            <li><a href="#" data-translate="footer_terms">Terms of service</a></li>
+            <li><a href="#" data-translate="footer_privacy">Privacy policy</a></li>
           </ul>
         </div>
-
         <div class="col-lg-4 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-translate="footer_our_services">Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#" data-translate="footer_service_web_design">Web Design</a></li>
+            <li><a href="#" data-translate="footer_service_web_dev">Web Development</a></li>
+            <li><a href="#" data-translate="footer_service_product_mgmt">Product Management</a></li>
+            <li><a href="#" data-translate="footer_service_marketing">Marketing</a></li>
+            <li><a href="#" data-translate="footer_service_graphic">Graphic Design</a></li>
           </ul>
         </div>
-
       </div>
     </div>
-
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mulet International</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-      </div>
-
-
-
+      <p>© <span data-translate="footer_copyright">Copyright</span> <strong class="px-1 sitename">Mulet International</strong> <span data-translate="footer_all_rights">All Rights Reserved</span></p>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -294,14 +250,31 @@
   <script src="assets/js/main.js"></script>
 
   <!-- Leaflet JS -->
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  ></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="assets/js/map.js"></script>
 
   <!-- Calendly -->
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-</body>
+  <!-- Language Toggle Script -->
+  <script src="assets/js/language.js"></script>
 
+  <!-- Script para manejar placeholders -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const updatePlaceholders = () => {
+        const lang = localStorage.getItem('lang') || 'en';
+        document.querySelectorAll('[data-language-placeholder]').forEach(el => {
+          const key = el.getAttribute('data-language-placeholder');
+          if (translations[lang] && translations[lang][key]) {
+            el.placeholder = translations[lang][key];
+          }
+        });
+      };
+      updatePlaceholders();
+
+      document.getElementById('lang-toggle')?.addEventListener('click', updatePlaceholders);
+    });
+  </script>
+</body>
 </html>
