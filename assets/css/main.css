@@ -1778,22 +1778,8 @@ section,
 
 .carousel-slide {
   display: flex;
-  gap: 40px; /* Espacio entre logos */
+  gap: 40px; 
 }
-
-/*
-.carousel-slide img {
-  height: 80px; 
-  object-fit: contain;
-  aspect-ratio: 3 / 2; 
-  transition: transform 0.3s ease;
-} */
-
-/*
-.carousel-slide img:hover {
-  transform: scale(1.1);
-}
-*/  
 
 @keyframes scroll-left {
   0% {
@@ -1810,10 +1796,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-/*   background-color: white; 
-  border-radius: 8px;       
- */  
- padding: 10px;
+  padding: 10px;
 }
 
 .logoemp-box img {
@@ -1821,5 +1804,3 @@ section,
   max-height: 100%;
   object-fit: contain;
 }
-
-
