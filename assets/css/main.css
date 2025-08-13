@@ -1801,3 +1801,21 @@ section,
   position: relative;
 }
 
+.logoemp-box {
+  width: 120px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* opcional */
+  border-radius: 8px;       /* opcional */
+  padding: 10px;
+}
+
+.logoemp-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
