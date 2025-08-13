@@ -146,6 +146,17 @@ document.addEventListener('DOMContentLoaded', () => {
       careers_job2_location: 'Miami / Florida – Hybrid',
       careers_cta_text: 'We are always looking for talented people! Who knows, you might be the candidate we didn’t know we needed.',
       careers_cta_button: 'Send your resume',
+      job1_title: 'Full-Stack Developer',
+      job1_location: 'Miami / Florida – Remote',
+      job1_category: 'Production – Software Developers / EN / Remote',
+      job1_description: 'Mulet International LLC is looking for a Full-Stack Developer to collaborate on various projects with our clients. You’ll be a subject-matter expert with deep understanding of frameworks and development processes, working closely with engineers, designers, and QA analysts on innovative web and mobile projects.',
+      job1_responsibilities_title: 'Responsibilities:',
+      job1_responsibility_1: 'Write, modify, review, optimize, and debug code.',
+      job1_responsibility_2: 'Develop web applications.',
+      job1_responsibility_3: 'Participate in testing and quality control activities as described in the testing strategy.',
+      job1_responsibility_4: 'Review code and architecture to ensure alignment with company standards and industry best practices.',
+      job1_responsibility_5: 'Provide technical leadership to the project and development team.',
+      job1_apply_button: 'APPLY FOR THIS JOB',
     },
     es: {
       page_title: 'Índice - Mulet International',
@@ -292,11 +303,22 @@ document.addEventListener('DOMContentLoaded', () => {
       careers_job2_title: 'Desarrollador Frontend Senior Angular',
       careers_job2_location: 'Miami / Florida – Híbrido',
       careers_cta_text: '¡Siempre estamos buscando personas talentosas! Quién sabe, podrías ser el candidato que no sabíamos que necesitábamos.',
-      careers_cta_button: 'Enviar tu currículum'
+      careers_cta_button: 'Enviar tu currículum',
+      job1_title: 'Desarrollador Full-Stack',
+      job1_location: 'Miami / Florida – Remoto',
+      job1_category: 'Producción – Desarrolladores de Software / ES / Remoto',
+      job1_description: 'Mulet International LLC está buscando un Desarrollador Full-Stack para colaborar en diversos proyectos con nuestros clientes. Serás un experto en la materia con profundo conocimiento de frameworks y procesos de desarrollo, trabajando estrechamente con ingenieros, diseñadores y analistas QA en proyectos web y móviles innovadores.',
+      job1_responsibilities_title: 'Responsabilidades:',
+      job1_responsibility_1: 'Escribir, modificar, revisar, optimizar y depurar código.',
+      job1_responsibility_2: 'Desarrollar aplicaciones web.',
+      job1_responsibility_3: 'Participar en actividades de prueba y control de calidad según lo descrito en la estrategia de pruebas.',
+      job1_responsibility_4: 'Revisar el código y la arquitectura para asegurar alineación con los estándares de la empresa y las mejores prácticas de la industria.',
+      job1_responsibility_5: 'Brindar liderazgo técnico al proyecto y al equipo de desarrollo.',
+      job1_apply_button: 'POSTULARSE A ESTE EMPLEO',
     }
   };
 
-  let currentLang = localStorage.getItem('lang') || 'en';  // Default: inglés
+  let currentLang = localStorage.getItem('lang') || 'en';  
   const langToggle = document.getElementById('lang-toggle');
   const langText = document.getElementById('lang-text');  
 
