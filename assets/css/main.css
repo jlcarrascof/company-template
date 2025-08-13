@@ -1856,3 +1856,28 @@ section,
   background-color: #0056b3;
   border-color: #0056b3;
 }
+
+.job-detail-section h3 {
+  font-size: 1.75rem;
+}
+
+.job-detail-section ul {
+  padding-left: 1.2rem;
+}
+
+.job-detail-section ul li {
+  margin-bottom: 8px;
+}
+
+.job-detail-section .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 1rem;  
+}
+
+.job-detail-section .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
