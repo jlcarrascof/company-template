@@ -1804,3 +1804,19 @@ section,
   max-height: 100%;
   object-fit: contain;
 }
+
+.careers-section h2 {
+  font-weight: 700;
+}
+
+.careers-section .list-group-item {
+  border: none;
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.cta-box {
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
