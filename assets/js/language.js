@@ -351,7 +351,16 @@ document.addEventListener('DOMContentLoaded', () => {
         el.innerHTML = translations[lang][key];  
       }
     });
+
+    document.querySelectorAll('[data-language-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-language-placeholder');
+      if (translations[lang][key]) {
+        el.setAttribute('placeholder', translations[lang][key]);
+      }
+    });
+
     localStorage.setItem('lang', lang);
+
     document.documentElement.lang = lang;
     if (langText) {
       langText.textContent = lang === 'en' ? 'ES' : 'EN';
